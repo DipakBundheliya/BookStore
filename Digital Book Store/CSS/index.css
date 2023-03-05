@@ -1,0 +1,235 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Baloo Bhai 2', cursive;
+}
+
+/* Css variable */
+
+/* Nevigation bar */
+#navbar {
+    display: flex;
+    position: fixed;
+    width: 100% ;
+    height: 70px;
+}
+#navbar::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(17 ,26, 32);
+    opacity: 1;
+    z-index:-1;
+}
+#logo {
+    margin: 2px 2px;
+}
+
+#logo img {
+    margin: 4px 5px 4px 1px;
+    width: 67px;
+    height: 44px;
+}
+
+/* Navigation bar list style */
+#navbar ul {
+    display: flex;
+}
+
+#navbar ul li {
+    list-style: none;
+    font-size: 1.1rem;
+    padding-top: 15px;
+}
+#navbar ul li a{
+    color: white;
+    display: block;
+    padding: 3px 25px;
+    text-decoration: none;
+}
+#navbar ul li a:hover{
+    color: black;
+    background-color: white;
+    border-radius: 20px;
+}
+/* Home style */
+
+#home{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding-top: 100px;
+    height: 370px;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+    width: 100%;
+}
+#home::before{
+    content: "";
+    position: absolute;
+    background: url('../Img/bg3.jpg')no-repeat center center/cover;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 1;
+    z-index:-1;
+    filter: brightness(50%);
+}
+
+#home p{
+    font-size: 18px;
+}
+
+.submit{
+    padding: 2px 80px;
+    margin-top: 30px;
+    color: #21282b;
+    background-color: #7bbecb;
+    border: 2px solid #21282b;
+    border-radius: 10px;
+    font-size: 1.3rem;
+    cursor: pointer;
+}
+
+.submit:hover{
+    background-color: #1786a7;
+    color: #daedf3;
+}
+
+.serheading{
+    text-align: center;
+    padding: 30px;
+    color: #beedfb;
+    font-size: 40px;
+}
+.service{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 80px;
+}
+.box{
+    border: 3px solid #14a3bf;
+    background-color: rgb(208 224 229);
+    height: 400px;
+    width: 444px;
+    margin: 14px 39px 39px 39px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    border-radius: 20px;
+    color: #12353e;
+}
+.logoicon{
+    width: 100px;
+    height: 100px;
+}
+
+
+/* Utility class */
+.hprimary{
+    font-size: 3.5rem;
+    padding: 12px;
+}
+.innerpara{
+    padding: 10px;
+}
+
+
+.sitebackground{
+    background-image: linear-gradient(#010708, #022a52);
+    color: white;
+}
+
+/* Clients */
+
+#clientsdiv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    
+}
+
+#clientsdiv img{
+    height: 90px;
+    margin: 50px;
+}
+#clients-heading{
+    text-align: center;
+    color: white;
+    font-size: 2.6rem;
+    padding-top: 40px;
+    text-shadow: 4px 4px black;
+}
+#client-section{
+    height: 300px;
+    position: relative;
+
+}
+#client-section::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    background: url('../Img/client2.jpeg')no-repeat center center/cover;
+    z-index: -1;
+    filter: brightness(50%) saturate(90%);
+}
+
+/* Contect container */
+
+#form-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 40px;
+    
+    
+}
+#form-box input,#form-box textarea{
+    width: 100%;
+    margin: 10px auto;
+}
+#contact-head{
+    text-align: center;
+    padding: 20px;
+    font-size: 2.5rem;
+}
+#contact-container{
+    position: relative;
+    color: white;
+}
+#contact-container::before{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: url('../Img/contact.jpg')no-repeat center center/cover;
+    z-index: -1;
+    filter: brightness(10%);
+}
+
+
+/* border: 2px solid red;
+    background-color: #fefbd8;
+    height: 400px;
+    width: 444px;
+    margin: 14px 39px 39px 39px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    border-radius: 20px;
+    color: black; */
